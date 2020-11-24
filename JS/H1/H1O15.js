@@ -1,4 +1,4 @@
-var xJOS = 225;
+var xJOS = 75;
 var yJOS = 75;
 
 function setup() {
@@ -6,7 +6,7 @@ function setup() {
   canvas.parent('processing');
   textFont("Verdana");
   textSize(14);
-  frameRate(20);
+  frameRate(30);
   fill('black');
 }
 
@@ -14,6 +14,12 @@ function draw() {
   background('lavender');
   text("x = " + round(xJOS),10,20);
   tekenJos(xJOS,yJOS);
+  translate(0,160);
+  tekenJos(xJOS,yJOS);
+  translate(0,160);
+  tekenJos(xJOS,yJOS);
+  xJOS += 3
+  xJOS=constrain(xJOS,75,425)
 }
 
 function tekenJos(x,y) {
@@ -21,7 +27,7 @@ function tekenJos(x,y) {
   translate(x,y);
   scale(1); 
   noStroke();
-  fill('indianred');
+  fill('orange');
   ellipse(0,0,50);
   fill('slategray');
   ellipse(-7,-10,17);
@@ -29,7 +35,7 @@ function tekenJos(x,y) {
   fill('white');
   ellipse(-7,-8,7,13);
   ellipse(7,-8,7,13);
-  fill('orange');
+  fill('indigo');
   ellipse(0,3,17);
   stroke('slategray');
   strokeWeight(3);
