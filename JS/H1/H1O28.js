@@ -19,6 +19,7 @@ function draw() {
   // tekenen rode bladeren
   
   fill(178, 34, 34,.7);
+ for (var aantal )
   ellipse(0,0,400,50);
   rotate(360 / aantal);
 
