@@ -31,8 +31,10 @@ function tekenRaster() {
   HINT: je kunt terugkijken naar het raster dat je in H1 hebt gemaakt.
   Maak gebruik van de variabelen die bovenaan zijn gedeclareerd.
   */
-  
-      rect(4*celGrootte,2*celGrootte,celGrootte,celGrootte);
-
+  for (var rij=0; rij <= aantalRijenRaster;) {
+      for (var kolom = 0; kolom <= aantalKolommenRaster;) {
+      rect(4*celGrootte,2*celGrootte,celGrootte,celGrootte)
+      }
+  }
   pop();
 }
